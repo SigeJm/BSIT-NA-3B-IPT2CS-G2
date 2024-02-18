@@ -1,0 +1,164 @@
+    1  cd desktop
+    2  mkdir ARCEO
+    3  cd ARCEO
+    4  git init
+    5  git config user.name "JOHN MIGUEL P."
+    6  git config user.email "jm.arceo00325@student.tsu.edu.ph"
+    7  echo "this is my first version" > IPT2ACT1.txt
+    8  git status
+    9  git add .
+   10  git status
+   11  git commit -m "this is 1st version"
+   12  git status
+   13  touch file2.txt. file3.txt file4.txt
+   14  echo "replaced the first version, now on second" > IPT2ACT1.txt
+   15  git status
+   16  git add .
+   17  cd desktop
+   18  mkdir ARCEO
+   19  cd ARCEO
+   20  git init
+   21  git config user.name "JOHN MIGUEL P. ARCEO"
+   22  git config user.email "jm.arceo00325@student.tsu.edu.ph"
+   23  echo "this is my first version" > IPT2ACT1.txt
+   24  git status
+   25  [200~
+   26  git add IPT2ACT1.txt
+   27  git status
+   28  cd desktop
+   29  mkdir ARCEO
+   30  cd ARCEO
+   31  git init
+   32  git config user.name "ARCEO JOHN MIGUEL P."
+   33  git config user.email "jm.arceo00325@student.tsu.edu.ph"
+   34  echo "this is my first version" > IPT2ACT1.txt
+   35  git status
+   36  git add IPT2ACT1.txt
+   37  git status
+   38  git commit -m "this is my first commit"
+   39  git status
+   40  touch file2.txt
+   41  touch file3.txt
+   42  touch file4.txt
+   43  echo "replaced the first version, now on second" > IPT2ACT1.txt
+   44  git status
+   45  git add .
+   46  git status
+   47  git commit -m "this is my second commit add all"
+   48  git status
+   49  git log
+   50  git reset --hard be77408ff8cc2af2cbc085c0ff75c66dad1c497d
+   51  git branch new-feature
+   52  git checkout new-feature
+   53  touch new_feature_file.txt
+   54  git add .
+   55  git status
+   56  git commit -m "this is 1st to new branch"
+   57  git status
+   58  echo "new feature" > new_feature_file.txt
+   59  git add.
+   60  git status
+   61  git commit -m "this is 2nd to new" 
+   62  git add .
+   63  git status
+   64  git commit -m "this is 2nd to new"
+   65  git status
+   66  touch 3rdonfilenew.txt
+   67  git status
+   68  git add .
+   69  git commit -m "this is 3rd to new"
+   70  git status
+   71  touch 4thfile.txt
+   72  git status
+   73  git add .
+   74  git status
+   75  git commit -m "this is 4th to new"
+   76  git status
+   77  touch file5tonew.txt
+   78  git status
+   79  git add . 
+   80  git status
+   81  git commit -m "this is 5th to new"
+   82  git status
+   83  git checkout master
+   84  git merge new-feature
+   85  git branch
+   86  git branch -d new-feature
+   87  git log
+   88  git reset --hard  be77408ff8cc2af2cbc085c0ff75c66dad1c497d
+   89  git init
+   90  test.txt
+   91  touch test.txt
+   92  add test.txt
+   93  git add test.txt
+   94  git commit -m "testing"
+   95  git user.name "jm"
+   96  git --help
+   97  git user.name "jm"
+   98  git config user.name "jm"
+   99  git config user.email "jm.arceo00325@student.tsu.edu.ph"
+  100  git commit --ammend --reset-author "resetting author"
+  101  git commit --amend --reset-author "resetting author"
+  102  git commit -m "first"
+  103  git commit --amend --reset-author "resetting author"
+  104  git init
+  105  git config user.name "jm"
+  106  git config user.email "jm.arceo00325@student.tsu.edu.ph"
+  107  touch test.txt
+  108  git add .
+  109  git commit -m "testing"
+  110  git commin --amend--reset-author "resetting author"
+  111  git commit --amend--reset-author "resetting author"
+  112  git commit --amend --reset-author "resetting author"
+  113  git commit --amend --reset-pica "resetting author"
+  114  git commit --amend --reset-aurhot"resetting author"
+  115  git commit --amend --reset-author "resetting author"
+  116  echo "jm" > test.txt
+  117  git add .
+  118  git commit -m "after changing text of test.txt"
+  119  git config user.name
+  120  git commit --amend --reset-author "resetting author"
+  121  git commit --amend --reset-author "jm"
+  122  git commit --amend --reset-author="jm jm.arceo00325@student.tsu.edu.ph"
+  123  git commit --amend --reset-author= "jm jm.arceo00325@student.tsu.edu.ph"
+  124  git commit --amend --reset-author= "jm <jm.arceo00325@student.tsu.edu.ph>"
+  125  git commit --amend --reset-author= "reset"
+  126  git commit --amend --reset-author~
+  127  git commit --amend --reset-author
+  128  git init
+  129  touch test.txt
+  130  git add .
+  131  git commit -m "asda"
+  132  git config user.name "jm"
+  133  git config user.email "jm.arceo00325@student.tsu.edu.ph"
+  134  git commit -m "first"
+  135  git commit --amend --reset-author"resetting author"
+  136  git commit --amend --reset-author "reset author"
+  137  git commit --amend --reset-author -m "reset author"
+  138  echo "si roi ay bobo" > test.txt
+  139  git add .
+  140  git commit -m "this is modified"
+  141  git config user.name
+  142  git show
+  143  git config user.name "roi"
+  144  git config user.email "roi@email.bobo.com"
+  145  git show
+  146  git commit --amend --reset-author -m "reset author 2nd"
+  147  git show
+  148  git clone https://github.com/SigeJm/BSIT-NA-3B-IPT2CS-G2
+  149  cd BSIT-NA-3B-IPT2CS-G2
+  150  git branch arceo-iptq1
+  151  git branch -b arceo-iptq1
+  152  git branch -B "arceo-iptq1"
+  153  git checkout -b arceo-iptq1
+  154  mkdir 200325
+  155  cd 200325
+  156  touch index.html
+  157  git add .
+  158  git commit
+  159  git commit -m "creating first file in git hub"
+  160  git config user.author "jm"
+  161  git config user.email "jm.arceo00325@student.tsu.edu.ph"
+  162  git commit -m "creating first file in git hub"
+  163  git push -u origin arceo-iptq1
+  164  history > history.txt

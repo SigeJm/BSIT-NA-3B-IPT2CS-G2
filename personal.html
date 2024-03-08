@@ -1,0 +1,57 @@
+<!Doctype HTML>
+<html lang="en">
+    <head>
+        <title>Main</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="design.css">
+        <title>Personal Slider</title>
+    </head>
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+    <div class="container">
+
+        <div class="slide">
+
+            <div class="item" style="background-image: url(food.jpg);">
+                <div class="content">
+                    <div class="name">Hobbies</div>
+                    <div class="des">At the very young age of 12, I started to have an interest in cooking, which became my hobby. I love to serve delicious food to my family and my number one inspiration is my father, who is good at cooking, and because of him, I learned a lot of dishes to cook. Aside from cooking,
+                         I don't have any hobbies, but I love and enjoy taking good care of my three nephews.</div>
+                </div>
+            </div>    
+            <div class="item" style="background-image: url(roselyn.jpg);">
+                <div class="content">
+                    <div class="name">Me and Myself</div>
+                    <div class="des">Hi! I am Roselyn P. Gacutan, I’m 21 years old, and I am from San Jacinto Victoria Tarlac. I am currently studying at Tarlac State University as a 3rd year student 
+                        with a Bachelor of Science and Information Technology major in Networking and Administration.</div>
+                        <div class="popup" id="popup-1">
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <div class="close-btn" onclick="togglePopup()">&times;</div>
+                                <h1>Quote for today</h1>
+                                <br>
+                                <p>Anything you see that you want, it's not needed. so let it be</p>
+                            </div>
+                        </div>
+                        <button onclick="togglePopup()">See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(cat.jpg);">
+                <div class="content">
+                    <div class="names">Favorites</div>
+                    <div class="desss">I am a cat and dog lover. Actually, I have a lot of dogs and cats in our house.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+    </div>
+
+        <script src="script.js"> </script>
+</html>

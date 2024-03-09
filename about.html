@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About JM ARCEO</title>
+    <meta name="author" content="harrnish @codegrid">
+
+    
+    <link rel="stylesheet" href="css/styles.css" />
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.js"></script>
+</head>
+
+<body id="js-scroll">
+    <div class="wrapper">
+
+        
+        <nav class="menu">
+            <div class="menu__logo">
+                <a href="index.html">JM</a>
+            </div>
+            <div class="menu__items">
+                <div class="menu__items-link"><a href="index.html">Home</a></div>
+                <div class="menu__items-link active"><a href="about.html">About</a></div>
+            </div>
+        </nav>
+
+        
+
+        <div class="about__container" data-scroll-section>
+            <p class="about__container-data" data-scroll>Hi! My name is <span>John Miguel Pineda Arceo</span> and I'm a technichian at and , 
+                raised in <span>Mabilog, Concepcion </span> Tarlac.</p>
+
+            <p data-scroll>If you want to have a chat <span
+                    class="about__container-contact-link"><a href="https://www.facebook.com/jm.p.arceo/" target="_blank">click here.</a></span></p>
+
+            <p class="about__container-link" data-scroll><a href="https://github.com/SigeJm/BSIT-NA-3B-IPT2CS-G2"
+                    target="_blank"> GitHub Repository <br> </a>Case study 2024</p>
+        </div>
+        
+           
+        <div class="cursor-follow"></div>
+    </div>
+    <canvas id="confetti"></canvas>
+
+        <button id="button" class="button-53" role="button">Celebrate!!!</button>
+
+        <div class="box">
+            <button class="button-49" role="change">Click me!</button>
+          </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="js/horizontal-scroll.js"></script>
+    <script>
+       
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('#js-scroll'),
+            smooth: true,
+            smoothMobile: true,
+            inertia: 0.75
+        });
+
+         
+        TweenMax.from(".cursor-follow", 2, {
+            delay: 1,
+            opacity: 0
+        });
+
+        follower = document.querySelector('.cursor-follow');
+
+        posX = 0;
+        posY = 0;
+        mouseX = 0;
+        mouseY = 0;
+
+        TweenMax.to({}, 0.016, {
+            repeat: -1,
+            onRepeat: function () {
+                posX += (mouseX - posX) / 9;
+                posY += (mouseY - posY) / 9;
+
+                TweenMax.set(follower, {
+                    css: {
+                        left: posX - 40,
+                        top: posY - 40,
+                    }
+                });
+            }
+        });
+
+        document.addEventListener("mousemove", function (e) {
+            mouseX = e.pageX;
+            mouseY = e.pageY;
+        });
+
+
+    </script>
+    
+
+    
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ivan G. Sidamon</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    #welcome {
+      background-color: #000000;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    #welcome h1 {
+      margin: 10px 0;
+      color: white;
+    }
+
+    #about {
+  background-image: url('jjj.avif'); 
+  background-size: cover; 
+  background-position: center;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#about p {
+  color: rgb(255, 255, 255);
+}
+
+#about h2 {
+  color: white
+}
+    .about-img {
+      max-width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .about-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #contact {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+#contact.hidden {
+  opacity: 0;
+}
+
+    #contact {
+  background-image: url('iii.avif'); 
+  background-size: cover; 
+  background-position: center;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#contact h2, div {
+  color: white
+}
+
+    .contact-item {
+      margin: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #interests {
+      background-color: #000000;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    #interests h2 {
+      margin-bottom: 20px;
+    }
+
+    #interests ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #interests li {
+      margin-bottom: 10px;
+    }
+
+    #interests h2, li {
+  color: white
+}
+
+    .interests-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  .interests-images img {
+    width: 500px; 
+    height: auto; 
+    margin: 0 10px; 
+  }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#interests">My Interests</a>
+    </nav>
+  </header>
+
+
+  <section id="welcome">
+    <h1>Hello, My Name is Ivan</h1>
+    <button onclick="changeBackgroundColor()">Change Background Color</button>
+  </section>
+
+  <section id="about">
+    <h2>About me</h2>
+    <div class="about-img">
+      <img src="ivan123.jpg" alt="img">
+    </div>
+    <p>I'm Ivan Sidamon BSIT CCS student of Tarlac State University with 20 yrs of age from Concepcion, Tarlac. I do believe in saying that "Time is Gold"</p>
+  </section>
+  <section id="contact">
+    <h2>Contact Info</h2>
+    <div class="contact">Phone: +9690129540</div>
+    <div class="contact">Email: sidamonivan2@gmail.com</div>
+    <div class="contact">Address: Brgy.Cafe, Concepcion,Tarlac</div>
+    <button onclick="toggleContactVisibility()">Toggle Contact Info</button>
+  </section>
+
+
+  <section id="interests">
+    <h2>My Interests</h2>
+    <ul>
+      <li>Watching Movies</li>
+      <li>Music</li>
+      <li>Traveling</li>
+    </ul>
+
+ <div class="interests-images">
+    <img src="movies1.jpg" alt="Image 1">
+    <img src="music1.jpg" alt="Image 2">
+    <img src="travel.jpg" alt="Image 3">
+  </div>
+
+  <script>
+     function changeBackgroundColor() {
+    var welcomeSection = document.getElementById('welcome');
+    var randomColor = getRandomColor();
+    welcomeSection.style.backgroundColor = randomColor;
+  }
+
+  function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+  
+  function toggleContactVisibility() {
+  var contactSection = document.getElementById('contact');
+  if (contactSection.classList.contains('hidden')) {
+    contactSection.classList.remove('hidden');
+  } else {
+    contactSection.classList.add('hidden');
+  }
+}
+
+  </script>
+
+</section>
+  </section>
+</body>
+
+</html>
